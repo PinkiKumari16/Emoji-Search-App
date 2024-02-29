@@ -45,3 +45,34 @@ input{
     font-weight: bold;
     color:var(--button-font-color);
 }
+
+@media (max-width: 425px){
+    .searchBar{
+        padding: 1px;
+        width: 90%;
+        margin: 0 1em ;
+    }
+    .searchIcon{
+        height: 4.5vh;
+        width: 16vw;
+        font-size:0.8rem;
+    } 
+    input{
+        font-size: 1em;
+    }
+    
+    
+}
+@media (max-width: 770px){
+    .searchBar{
+        width: 90%;
+        margin: 0 1em ;
+    }
+    .searchIcon{
+        height: 4.5vh;
+        width: 16vw;
+        font-size: 1rem;
+    }
+    
+    
+}
