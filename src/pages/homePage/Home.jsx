@@ -12,7 +12,6 @@ export const Home = () => {
       <Navbar emojiType={emojiType} setEmojiType={setEmojiType}/>
       <div className={styles.text}>
           <h2>Most Popular..</h2>
-          <strong>Show More</strong>
       </div>
       <div className={styles.parent}>
         {emojisData.map((emoji, ind)=>{

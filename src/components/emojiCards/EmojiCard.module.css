@@ -23,3 +23,15 @@
     padding: 5px;
 
 }
+@media (max-width: 425px) {
+    .emojiCard{
+        height: 6em;
+        width: 5.6em;
+    }
+    .emojiSymbol{
+        font-size: 3rem;
+        padding: 5px;
+    
+    }
+    
+}
