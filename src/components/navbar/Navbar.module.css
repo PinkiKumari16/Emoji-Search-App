@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.appTitle{
+    text-align: center;
+    margin: 20px ;
+}
+
+.searchBar{
+    display: flex;
+    padding: 5px;
+    width: 45rem;
+    justify-content:space-between;
+    text-align: center;
+    margin: 0 40em ;
+    border: 3px solid var(--search-bar-border-color);
+    box-shadow: var(--search-bar-border-shadow);
+    background-color:var(--search-bar-background-color);
+}
+
+.emoji{
+    height: 100%;
+    width: 1vw;
+    font-size: 2em;
+
+}
+input{
+    border: none;
+    outline: none;
+    width: 50%;
+    font-size: 1.3em;
+    background-color: var(--search-bar-background-color);
+}
+.searchIcon{
+    border: 2px solid var(--button-border-color);
+    text-align: center;
+    justify-content: center;
+    height: 4.1vh;
+    width: 7vw;
+    background-color:var(--button-background-color);
+    font-size: 1.3rem;
+    font-weight: bold;
+    color:var(--button-font-color);
+}

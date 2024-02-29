@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+}
+:root{
+    --movies-child-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px -4px 6px, 
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    --emoji-card-color: #800080;
+    --search-bar-border-color: #000000;
+    --search-bar-border-shadow: 1px 1px 20px 0.5px #590a79;
+    --search-bar-background-color:  #f6d5db;
+    --button-border-color: #0202f8;
+    --button-background-color:  #26d226;
+    --button-font-color:  #fff;
+}
+

@@ -1,0 +1,16 @@
+.parent{
+    justify-content: center;
+    align-items: center; 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em;  
+    margin: 2em 3em 2em 2em;
+ 
+} 
+
+.text{
+    display: flex;
+    justify-content: space-between;
+    margin: 2em 9em;
+    color:var(--button-border-color);
+}
