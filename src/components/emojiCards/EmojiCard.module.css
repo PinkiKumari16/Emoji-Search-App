@@ -25,8 +25,8 @@
 }
 @media (max-width: 425px) {
     .emojiCard{
-        height: 6em;
-        width: 7em;
+        height: 7em;
+        width: 6.5em;
         
     }
     .emojiSymbol{
