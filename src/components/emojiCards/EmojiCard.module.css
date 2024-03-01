@@ -27,10 +27,10 @@
     .emojiCard{
         height: 6em;
         width: 6.5em;
-        font-size: 5px;
         
     }
     .emojiSymbol{
+        object-fit: fill;
         font-size: 2rem;
         padding: 5px;
     
