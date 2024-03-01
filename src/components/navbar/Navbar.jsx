@@ -8,7 +8,6 @@ export const Navbar = ({emojiType, setEmojiType}) => {
       <div className={styles.searchBar}>
           <div className={styles.emoji}>🤗</div>
           <input 
-            type='search'
             placeholder='  Search Emoji.....'
             value={emojiType}
             onChange={(e)=>setEmojiType(e.target.value)}

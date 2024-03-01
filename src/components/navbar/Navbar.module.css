@@ -55,7 +55,7 @@ input{
     .searchIcon{
         height: 4.5vh;
         width: 16vw;
-        font-size:0.8rem;
+        padding: 2px;
     } 
     input{
         font-size: 1em;

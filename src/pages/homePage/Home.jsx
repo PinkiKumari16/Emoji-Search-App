@@ -1,31 +1,46 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from './Home.module.css'
 import { EmojiCard } from '../../components/emojiCards/EmojiCard'
 import { Navbar } from '../../components/navbar/Navbar'
 import data from './emojiList.json'
 
 export const Home = () => {
-  const [emojisData,setEmojisData] = useState(data)
+  const [emojisData,setEmojisData] = useState([])
   const [emojiType, setEmojiType] = useState("")
+  const [popularText, setPopularText] = useState(true)
+
+  const emojiFetchData = () =>{
+    let filterData;
+    if(emojiType !== ""){
+      filterData = data.filter((emoji) =>(emoji['title'].toLowerCase().includes(emojiType.toLowerCase())));
+    }else{
+      filterData = data.slice(0,20);
+    }
+    setEmojisData(filterData);
+    setPopularText(filterData.length < 1 ? false : true)
+    
+  }
+  
+  useEffect(() => {
+    emojiFetchData();
+  }, [emojiType])
+  
   return (
     <>
       <Navbar emojiType={emojiType} setEmojiType={setEmojiType}/>
-      <div className={styles.text}>
+      {popularText && (<div className={styles.text}>
           <h2>Most Popular..</h2>
-      </div>
+        </div>
+      )}
       <div className={styles.parent}>
-        {emojisData.map((emoji, ind)=>{
-          if(emojiType !== "") {
-            if(emoji['title'].toLowerCase().includes(emojiType.toLowerCase())){
-              return(<EmojiCard key={emoji.title} {...emoji}/>)
-            } 
-          }
-          else{
-            if(ind<=19){
-              return(<EmojiCard key={emoji.title} {...emoji}/>)
-            }
-          }
-        })}
+        { !emojisData.length ? (
+            <h1>Oops.....  🤦🏼 Emoji Not Fount!</h1>
+          ) : (
+            emojisData.map((emoji) => {
+                return <EmojiCard  key={emoji.title}{...emoji}/>
+            })
+          )
+        }
       </div>
     </>
   )
