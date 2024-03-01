@@ -26,10 +26,12 @@
 @media (max-width: 425px) {
     .emojiCard{
         height: 6em;
-        width: 6em;
+        width: 6.5em;
+        font-size: 5px;
+        
     }
     .emojiSymbol{
-        font-size: 2.5rem;
+        font-size: 2rem;
         padding: 5px;
     
     }
