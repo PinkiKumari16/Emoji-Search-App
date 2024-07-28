@@ -6,6 +6,7 @@
 
 .appTitle{
     text-align: center;
+    justify-content: center;
     margin: 20px ;
 }
 
@@ -45,6 +46,17 @@ input{
     font-weight: bold;
     color:var(--button-font-color);
 }
+@media (max-width: 1440px) {
+    .searchBar{
+        width: 50%;
+        margin: 0 25% ;
+    }
+    .searchIcon{
+        /* height: 4.5vh; */
+        width: 8vw;
+        font-size: 1rem;
+    }
+}
 
 @media (max-width: 425px){
     .searchBar{
@@ -76,3 +88,4 @@ input{
     
     
 }
+
