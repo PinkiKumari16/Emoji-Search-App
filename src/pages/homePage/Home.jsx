@@ -27,6 +27,9 @@ export const Home = () => {
   
   return (
     <>
+<<<<<<< HEAD
+=======
+>>>>>>> 54e77153a (add one line)
       <Navbar emojiType={emojiType} setEmojiType={setEmojiType}/>
       {popularText && (<div className={styles.text}>
           <h2>Most Popular..</h2>
